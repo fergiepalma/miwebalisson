@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSFiddle tg4nj20y</title>
+
+  <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #080808;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #c8102e;
+}
+
+header h1 {
+    color: #e5092f;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e5092f;
+}
+
+.hero {
+    min-height: 520px;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+        linear-gradient(135deg, #650015, #160000 60%, #080808);
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.rojo {
+    color: #ff233f;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #d60028;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.boton:hover {
+    background-color: #99001d;
+}
+
+.seccion {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #ed1737;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.seccion > p {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+.personajes {
+    background-color: #191919;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    background-color: #252525;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.imagen {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.profesor {
+    background: linear-gradient(135deg, #760016, #171717);
+}
+
+.tokio {
+    background: linear-gradient(135deg, #a20b25, #2a1010);
+}
+
+.berlin {
+    background: linear-gradient(135deg, #6d1420, #171717);
+}
+
+.nairobi {
+    background: linear-gradient(135deg, #8c1828, #251010);
+}
+
+.tarjeta h3 {
+    color: #ff304b;
+    margin: 15px;
+}
+
+.tarjeta p {
+    padding: 0 15px;
+}
+
+.curiosidades {
+    background-color: #111111;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+}
+
+.datos div {
+    background-color: #242424;
+    padding: 25px;
+    border-bottom: 3px solid #e5092f;
+}
+
+.datos h3 {
+    color: #ed1737;
+    font-size: 25px;
+}
+
+.contacto {
+    background-color: #1b1b1b;
+}
+
+form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #555;
+    background-color: #101010;
+    color: white;
+    border-radius: 5px;
+    font-family: Arial;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    background-color: #d60028;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #99001d;
+}
+
+footer {
+    text-align: center;
+    background-color: #080808;
+    padding: 35px;
+    border-top: 3px solid #c8102e;
+}
+
+footer h3 {
+    color: #e5092f;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #aaa;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .seccion {
+        padding: 50px 6%;
+    }
+}
+
+  </style>
+
+  
+</head>
+<body>
+  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de Papel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>LA CASA DE PAPEL</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#serie">La serie</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <p class="rojo">EL MAYOR ATRACO DE LA HISTORIA</p>
+            <h2>NO ES UN ATRACO.<br>ES UNA REVOLUCIÓN.</h2>
+            <p>
+                Descubre el mundo de La Casa de Papel,
+                sus personajes y sus increíbles atracos.
+            </p>
+            <a href="#serie" class="boton">DESCUBRIR LA SERIE</a>
+        </div>
+    </section>
+
+    <section id="serie" class="seccion">
+        <h2>¿QUÉ ES LA CASA DE PAPEL?</h2>
+        <p>
+            La Casa de Papel es una serie española de televisión
+            creada por Álex Pina. Cuenta la historia de un grupo
+            de personas que, dirigidas por un misterioso hombre
+            conocido como El Profesor, planean realizar grandes
+            atracos para conseguir millones de euros.
+        </p>
+        <p>
+            La serie destaca por sus giros inesperados, sus
+            personajes, sus estrategias y sus momentos de tensión.
+            Se convirtió en un fenómeno internacional.
+        </p>
+    </section>
+
+    <section id="personajes" class="seccion personajes">
+        <h2>PERSONAJES PRINCIPALES</h2>
+
+        <div class="tarjetas">
+
+            <article class="tarjeta">
+                <div class="imagen profesor">🎭</div>
+                <h3>EL PROFESOR</h3>
+                <p>
+                    Es el cerebro de los atracos. Inteligente,
+                    calculador y siempre tiene un plan.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="imagen tokio">🔴</div>
+                <h3>TOKIO</h3>
+                <p>
+                    Es una de las protagonistas. Valiente,
+                    impulsiva y narradora de la historia.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="imagen berlin">🎩</div>
+                <h3>BERLÍN</h3>
+                <p>
+                    Es uno de los miembros más importantes
+                    del equipo. Elegante y estratégico.
+                </p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="imagen nairobi">⭐</div>
+                <h3>NAIROBI</h3>
+                <p>
+                    Es una mujer decidida y experta en
+                    falsificación y fabricación de billetes.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="seccion curiosidades">
+        <h2>DATOS Y CURIOSIDADES</h2>
+        <div class="datos">
+            <div>
+                <h3>2017</h3>
+                <p>Año de estreno</p>
+            </div>
+            <div>
+                <h3>ESPAÑA</h3>
+                <p>País de origen</p>
+            </div>
+            <div>
+                <h3>ÁLEX PINA</h3>
+                <p>Creador de la serie</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion contacto">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <p>¿Cuál es tu personaje favorito? ¡Cuéntanoslo!</p>
+
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">ENVIAR MENSAJE</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <h3>LA CASA DE PAPEL</h3>
+    <p>Web creada para un proyecto de TIC de 2.º de Bachillerato.</p>
+    <p>Proyecto educativo | 2026</p>
+</footer>
+
+</body>
+</html>
+
+
+  <script>
+    
+  </script>
+</body>
+</html>
